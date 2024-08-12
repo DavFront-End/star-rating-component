@@ -9,13 +9,29 @@ stars.forEach((star) => {
     updateStars();
     showMessage(star.dataset.value);
   });
+
+  star.addEventListener("mouseover", () => {
+    updateHighlight(star.dataset.value);
+  });
+
+  star.addEventListener("mouseout", () => {
+    updateStars();
+  });
 });
 
 function updateStars() {
   stars.forEach((star) => {
-    star.classList.remove("selected");
+    star.classList.remove("selected", "highlighted");
     if (star.dataset.value <= ratingAmount) {
       star.classList.add("selected");
+    }
+  });
+}
+
+function updateHighlight(rating) {
+  stars.forEach((star) => {
+    if (star.dataset.value <= rating) {
+      star.classList.add("highlighted");
     }
   });
 }
