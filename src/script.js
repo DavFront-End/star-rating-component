@@ -59,6 +59,6 @@ function showMessage(rating) {
 
   if (rating === "5") {
     starRating.innerHTML =
-      " Excelente! Ficamos felizes em saber que você teve uma experiência tão positiva. Obrigado por escolher nosso produto/serviço.";
+      "Excelente! Ficamos felizes em saber que você teve uma experiência tão positiva. Obrigado por escolher nosso produto/serviço.";
   }
 }

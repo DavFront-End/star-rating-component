@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   height: 100vh;
   color: #ccc;
+  text-align: center;
 }
 
 .star-rating {
@@ -41,4 +42,19 @@ body {
 .highlighted
  {
   color: yellow;
+}
+
+@media (max-width: 500px) {
+  .star-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .star-rating {
+    width: 350px;
+    font-size: 1.2rem;
+  }
+
+  .star {
+    font-size: 4rem;
+  }
 }
