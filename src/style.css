@@ -22,10 +22,12 @@ body {
 
 .star-rating {
   color: #ccc;
-  font-size: 2rem;
+  font-size: 1.4rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  width: 700px;
+  text-align: center;
 }
 
 .star {
