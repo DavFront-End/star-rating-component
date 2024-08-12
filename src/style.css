@@ -44,7 +44,7 @@ body {
   color: yellow;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .star-container h2 {
     font-size: 1.3rem;
   }
