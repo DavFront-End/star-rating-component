@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* write your CSS here */
+
+body {
+  background: #1f1f1f;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.star-rating {
+  color: #ccc;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.star {
+  font-size: 5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star:hover,
+.selected,
+.highlighted
+ {
+  color: yellow;
+}
